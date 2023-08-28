@@ -11,8 +11,8 @@ public class LoadAssets : MonoBehaviour
     void Start()
     {
         Application.targetFrameRate = 60;
-        redObj = Instantiate(redObj, new Vector3(2f, 0f, 0f), Quaternion.identity);
-        blueObj = Instantiate(blueObj, new Vector3(-2f, 0f, 0f), Quaternion.identity);
+        GameObject redPrefab = Instantiate(redObj, new Vector3(2f, 0f, 0f), Quaternion.identity);
+        GameObject bluePrefab = Instantiate(blueObj, new Vector3(-2f, 0f, 0f), Quaternion.identity);
     }
 
     // Update is called once per frame
