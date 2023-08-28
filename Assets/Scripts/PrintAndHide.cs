@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ConsolePrint : MonoBehaviour
 {
+    public Renderer rend;
     private int i = 3;
     // Start is called before the first frame update
     void Start()
