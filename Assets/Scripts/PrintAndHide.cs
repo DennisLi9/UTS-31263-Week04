@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ConsolePrint : MonoBehaviour
+public class PrintAndHide : MonoBehaviour
 {
     public Renderer rend;
     private int i = 3;
@@ -21,8 +21,8 @@ public class ConsolePrint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log($"{gameObject.name}:{i}");
         i++;
+        Debug.Log($"{gameObject.name}:{i}");
         if (gameObject.CompareTag("Red") && i == 100)
         {
             gameObject.SetActive(false);
